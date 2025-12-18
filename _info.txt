@@ -1,1 +1,29 @@
 ShivRamvya Restrova -- is a multi tenant restaurant.
+
+Tools nedds to be installed.
+
+1 Git setup
+
+2 Node version manager (NVM) setup
+
+3 Node.js project setup
+
+4 TypeScript setup
+
+5 Prettier setup
+
+6 ESLint setup
+
+7 Git hooks setup
+
+8 Application configuration setup
+
+9 Express.js application setup
+
+10 Logger setup
+
+11 Error handling setup
+
+12 Tests setup
+
+13 Create template
