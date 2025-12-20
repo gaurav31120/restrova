@@ -1,7 +1,7 @@
-console.log('Welcome to restrova project auth-service')
+console.log("Welcome to restrova project auth-service");
 
-function welcome(name: string){
-    console.log('Welcome, ' + name)
+function welcome(name: string) {
+  console.log("Welcome, " + name);
 }
 
-welcome('Gaurav');
+welcome("Gaurav");

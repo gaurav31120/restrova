@@ -27,3 +27,52 @@ Tools nedds to be installed.
 12 Tests setup
 
 13 Create template
+
+--------------------------------------------------------------------------
+
+1 Git setup
+
+2 Node version manager (NVM) setup
+
+3 Node.js project setup
+
+4 TypeScript setup
+
+5 Prettier setup
+
+Open prettier.io -> docs -. click install
+copy this command there -- and paste on terminal
+
+i. npm install --save-dev --save-exact prettier
+
+ii. create a file .prettierrc file in root folder and write empty braces there {}
+
+iii. create prettierIgnore file and pust {dist, coverage} or run this command
+node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+-- these files will be ignore in formating
+
+iv. npx prettier . --write 
+This command is used to write prettier in code(means to apply prettier)
+
+To check only you can use this command -- npx prettier .
+
+v. "format:fix": "prettier . --write",
+    "format:check": "prettier . --check"
+
+    Put this two things inside scripts in package.json file
+
+6 ESLint setup
+
+7 Git hooks setup
+
+8 Application configuration setup
+
+9 Express.js application setup
+
+10 Logger setup
+
+11 Error handling setup
+
+12 Tests setup
+
+13 Create template
