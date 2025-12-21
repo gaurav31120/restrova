@@ -141,7 +141,8 @@ i. npm i winston
 ii. npm i -D @types/winston
 
 11 Error handling setup
-
+i.  npm install http-errors
+ii.  npm install -D  @types/http-errors
 12 Tests setup
 
 13 Create template
