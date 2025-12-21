@@ -137,6 +137,8 @@ ii. npm i -D @types/express
 iii. npm i -D nodemon ts-node
 
 10 Logger setup
+i. npm i winston
+ii. npm i -D @types/winston
 
 11 Error handling setup
 
