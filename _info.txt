@@ -63,6 +63,40 @@ v. "format:fix": "prettier . --write",
 
 6 ESLint setup
 
+i.Open eslint website -- https://typescript-eslint.io/getting-started
+ii. copy the installation command -- npm install --save-dev eslint @eslint/js typescript-eslint
+iii. create eslint.config.mjs file 
+iv. Paste this code to the page 
+
+// @ts-check
+
+import eslint from '@eslint/js';
+import { defineConfig } from 'eslint/config';
+import tseslint from 'typescript-eslint';
+
+export default defineConfig(    
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
+);
+
+v. Run this command to check lint npx eslint .
+
+vi. Put this in eslint.config.mjs file to ignore lint
+    {
+    ignores: ['dist', 'node_modules', 'eslint.congig.mjs],
+    }
+
+vii. Add rules to eslint.config.mjs file
+    rules: {
+        'dot-notation': "error"
+    }
+   
+viii. Add these two lines in pakage.json 
+
+    "lint:check": "eslint .",
+    "lint:fix": "eslint . --fix"
+
+
 7 Git hooks setup
 
 8 Application configuration setup
