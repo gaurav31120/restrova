@@ -45,6 +45,7 @@ npx tsc --init
 
 ii. Run this command
 npx tsc
+node dist/server.js
 
 5 Prettier setup
 
@@ -128,6 +129,7 @@ vi. Add this script in package.json
   }
 
 8 Application configuration setup
+i. npm install dotenv --save
 
 9 Express.js application setup
 

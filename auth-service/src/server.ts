@@ -1,7 +1,6 @@
-console.log("Welcome to restrova project auth-service");
+// console.log(process.env.PORT)
 
-function welcome(name: string) {
-  console.log("Welcome, " + name);
-}
+// import config = require("./config");
+import { Config } from './config/index.js'
 
-welcome("Gaurav");
+console.log(Config.PORT)
