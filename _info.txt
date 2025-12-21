@@ -37,6 +37,14 @@ Tools nedds to be installed.
 3 Node.js project setup
 
 4 TypeScript setup
+i. Run this command
+npm i -D typescript
+
+ii. Run this command
+npx tsc --init
+
+ii. Run this command
+npx tsc
 
 5 Prettier setup
 
@@ -98,6 +106,26 @@ viii. Add these two lines in pakage.json
 
 
 7 Git hooks setup
+-- It stops bad code(lint issued code) to commit in git
+ 
+i. Open https://typicode.github.io/husky/get-started.html 
+
+ii. Paste this command --
+npm install --save-dev husky
+
+iii. Init husky
+npx husky init
+
+iv. Open husky precommint and put this code
+npm run lint:check
+
+v. Run this cmd -- run lint at the time of staged
+npm install --save-dev lint-staged # requires further setup
+
+vi. Add this script in package.json
+"lint-staged": {
+    "*.ts": ["npm run format:fix", "npm run lint:fix"]
+  }
 
 8 Application configuration setup
 
