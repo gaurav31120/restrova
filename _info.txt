@@ -132,6 +132,9 @@ vi. Add this script in package.json
 i. npm install dotenv --save
 
 9 Express.js application setup
+i. npm i express
+ii. npm i -D @types/express
+iii. npm i -D nodemon ts-node
 
 10 Logger setup
 
