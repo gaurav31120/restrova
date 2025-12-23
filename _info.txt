@@ -144,5 +144,13 @@ ii. npm i -D @types/winston
 i.  npm install http-errors
 ii.  npm install -D  @types/http-errors
 12 Tests setup
+i. npm install --save-dev jest
+ii. npm install --save-dev ts-jest
+iii. npx ts-jest config:init
+iv. npm install --save-dev @types/jest
+
+v. npm install supertest --save-dev
+vi.npm install @types/supertest --save-dev
+
 
 13 Create template
