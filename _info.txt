@@ -154,3 +154,15 @@ vi.npm install @types/supertest --save-dev
 
 
 13 Create template
+
+i. Create a new repository
+ii. name it
+iii. click on create new repository
+iv. copy the https/ssh link -- https://github.com/gaurav31120/mernstack-node-app-template.git
+v. git remote -v 
+vi. git remote add template https://github.com/gaurav31120/mernstack-node-app-template.git
+vii. git remote -v
+viii. git push template main
+
+git push --> to push code in main branch
+git push template main --> to push code in template branch
