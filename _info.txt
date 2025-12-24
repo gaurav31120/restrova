@@ -166,3 +166,48 @@ viii. git push template main
 
 git push --> to push code in main branch
 git push template main --> to push code in template branch
+
+-------------------------------------------------------------
+
+Docker:
+
+1. ### Building the Docker Image 🏗️
+
+Navigate to the directory containing your `Dockerfile` and run:
+
+```bash
+docker build -t auth-service:dev -f docker/development/Dockerfile
+
+```
+
+This command will produce a Docker image named auth-service with the tag dev.
+
+------------------------------------------------------------
+
+2. ### Running the Express App in a Docker Container 🚀
+
+Once the image is built, you can run it:
+
+```bash
+docker run --rm -it -v $(pwd):/usr/src/app -v /usr/src/app/node_modules --env-file $(pwd)/.env -p 5501:5501 -e NODE_ENV=development auth-prep:dev
+
+```
+
+Your Express app is now accessible at http://localhost:5501
+
+3. ### Stoping the Docker Container ✋🏻
+
+You can stop the running container by using this command:
+
+```bash
+
+// If container is running in interactive mode.
+ctr + c
+
+// If container is running in detached mode.
+// List all running container
+docker ps
+
+// Stop the container using container id
+docker stop <container id>
+```
