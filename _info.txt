@@ -211,3 +211,27 @@ docker ps
 // Stop the container using container id
 docker stop <container id>
 ```
+
+----------------------------------------------------------------
+## Advanced Database Management and Secure User Authentication
+
+1. install docker in your system
+
+2. Pull the PostgreSQL Docker image
+docker pull postgres
+
+3. Create a persistent Volume: Persistent volums  ensures that the data remains intact even if the container 
+stops or crashes.
+
+docker volume create nameOfTheVolume ----> name of volume must be unique
+
+4. **Run the PostgreSQL container with the volume attached** 🏃‍♂️:
+    
+    ```bash
+    docker run --rm --name mernpg-container -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -v mernpgdata:/var/lib/postgresql/data -p 5432:5432 -d postgres
+    
+    ```
+
+5. How to stop the docker postgre
+
+docker stop idName
