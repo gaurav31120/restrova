@@ -235,3 +235,6 @@ docker volume create nameOfTheVolume ----> name of volume must be unique
 5. How to stop the docker postgre
 
 docker stop idName
+
+## Type ORM -- typeorm.io
+

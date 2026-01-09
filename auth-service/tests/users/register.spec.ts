@@ -41,6 +41,28 @@ describe('POST/auth/register', () => {
 
             expect(response.headers['content-type']).toEqual(expect.stringContaining("json"))
         })
+
+
+        it("should persist the user in the database", async () => {
+            // Arrange
+            const userData = {
+                firstName: 'Gaurav',
+                lastName: 'Kumar',
+                email: 'gaurav@gmail.com',
+                password: 'secret',
+            }
+            // Act
+            const response = await request(app)
+                .post('/auth/register')
+                .send(userData)
+            // console.log('Status Code:', response.statusCode);
+            // console.log('Response Body:', response.body);
+
+            // Assert
+
+            expect(response.statusCode).toBe(201) // This will fail and show Expected vs Received
+
+        });
     })
     describe('Fields are missing', () => {})
 })
