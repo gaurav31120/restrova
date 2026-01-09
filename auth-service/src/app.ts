@@ -1,4 +1,4 @@
-import "reflect-metadata"
+import 'reflect-metadata'
 
 import type { HttpError } from 'http-errors'
 import express, {
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 //     res.status(201).send();
 // });
 
-app.use("/auth", authRouter)
+app.use('/auth', authRouter)
 
 // app.get('/', async (req, res, next) => {
 //     const err = createHttpError(401, "You cannot access this route.")

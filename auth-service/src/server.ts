@@ -10,20 +10,18 @@ console.log(Config.PORT)
 
 // const app = express()
 
-
 const startServer = () => {
     const PORT = Config.PORT
     try {
         app.listen(PORT, () => {
-        // logger.warn("testing warning...")
-        // logger.error("testing error log...")
-        // logger.debug("debug test")
-        logger.info('Server listening on port', {port: PORT})
-     })
-    } catch(err) {
-    console.log(err)
-    process.exit(1)
-
+            // logger.warn("testing warning...")
+            // logger.error("testing error log...")
+            // logger.debug("debug test")
+            logger.info('Server listening on port', { port: PORT })
+        })
+    } catch (err) {
+        console.log(err)
+        process.exit(1)
     }
 }
 

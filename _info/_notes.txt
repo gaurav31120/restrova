@@ -1,0 +1,8 @@
+1 cross-env
+
+2 synchronize: true
+--> don't use synchronize in production  
+--> because if suppose I make a entity then this will make a table for that entity in the database.
+In prod data can be lost if we will do like this
+
+--> It is in sync with database

@@ -36,14 +36,15 @@ describe('POST/auth/register', () => {
             const response = await request(app)
                 .post('/auth/register')
                 .send(userData)
-            
+
             // Assert application/json utf-8
 
-            expect(response.headers['content-type']).toEqual(expect.stringContaining("json"))
+            expect(response.headers['content-type']).toEqual(
+                expect.stringContaining('json'),
+            )
         })
 
-
-        it("should persist the user in the database", async () => {
+        it('should persist the user in the database', async () => {
             // Arrange
             const userData = {
                 firstName: 'Gaurav',
@@ -61,8 +62,7 @@ describe('POST/auth/register', () => {
             // Assert
 
             expect(response.statusCode).toBe(201) // This will fail and show Expected vs Received
-
-        });
+        })
     })
     describe('Fields are missing', () => {})
 })
